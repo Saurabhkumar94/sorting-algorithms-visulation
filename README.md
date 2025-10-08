@@ -83,9 +83,5 @@
 
 ![Selection Sort](graphics/selection_light.png)
 
-## Connect on
 
-[Twitter](https://twitter.com/0rc_studio)  
-[Youtube](https://www.youtube.com/channel/UCmyvutGWtyBRva_jrZfyORA)  
-[Google Play Store](https://play.google.com/store/apps/dev?id=7315303590538030232)  
-E-mail: com.production.rc@gmail.com
+
