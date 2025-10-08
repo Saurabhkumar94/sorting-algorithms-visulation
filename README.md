@@ -1,14 +1,8 @@
 # Sorting Algorithms Simulator
 
-#### This is a modular Sorting Algorithms simulator and visualizer program made with java processing
+# This is a modular Sorting Algorithms simulator and visualizer program made with java processing
 
-#### [View Demo on YouTube](https://youtu.be/7IletkkG7TI)
 
-###### See also
-
-[3D N*N Rubik's Cube solver-AI](https://github.com/ChauhanRohan-RC/Cube.git)  
-[Fourier Series Simulation](https://github.com/ChauhanRohan-RC/Fourier-Series)  
-[3D Chaotic Attractors Simulation](https://github.com/ChauhanRohan-RC/Attractors)
 
 ![Cover](graphics/thumb.png)
 
@@ -50,7 +44,7 @@
 
 * Install [Java](https://www.oracle.com/in/java/technologies/downloads/) on your computer and add it to the path
 * Clone this repository  
-  `git clone https://github.com/ChauhanRohan-RC/Sorting-Algorithms-Simulator.git`
+  `
 * Navigate to `out\artifacts\SortingGl_jar` and run `launch.bat`.  
   Optionally, open up the terminal and run `java -jar SortingGl.jar`
 
