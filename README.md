@@ -1,21 +1,19 @@
-# Sorting Algorithms Simulator
+* Sorting Algorithms Simulator
 
-# This is a modular Sorting Algorithms simulator and visualizer program made with java processing
+* Sorting Algorithms simulator and visualizer program made with java processing
 
+[Cover](graphics/thumb.png)
 
-
-![Cover](graphics/thumb.png)
-
-## Overview
+* Overview
 
 * Contains several in-built Sorting Algorithms, with first hand support for implementing custom algorithms
 * Real-time colorful visualisation of algorithm parameters, iteration and values
 * Both command line and graphical interface controls
 * Change the data size, algorithm speed, sort order, color scheme etc
 
-![Quick Sort](graphics/quick_light.png)
+&[Quick Sort](graphics/quick_light.png)
 
-## Algorithms
+* Algorithms
 
 | Algorithm              | Key | Avg Time Complexity | Avg Space Complexity |
 |------------------------|-----|---------------------|----------------------|
@@ -25,9 +23,9 @@
 | Merge Sort (iterative) | M   | O(nlog(n))          | O(n)                 |
 | Quick Sort (iterative) | Q   | O(nlog(n))          | O(n)                 |
 
-![Merge Sort](graphics/merge_dark.png)
+&[Merge Sort](graphics/merge_dark.png)
 
-## Configurations and Actions
+* Configurations and Actions
 
 * `Data Size` : number of entries in the data set to be sorted
 * `Speed` : Increase/Decrease algorithm speed (in iterations per second)
@@ -38,19 +36,18 @@
 * `Theme` : toggle between light and dark themes
 * `Fullscreen` : To start as fullscreen, set the `fullscreen = 1` flag in `config.ini` settings file
 
-![Insertion Sort](graphics/insertion_light.png)
+&[Insertion Sort](graphics/insertion_light.png)
 
-## Usage
+* Usage
 
-* Install [Java](https://www.oracle.com/in/java/technologies/downloads/) on your computer and add it to the path
-* Clone this repository  
+* Install [Java](https://www.oracle.com/in/java/technologies/downloads/) on your computer and add it to the path  
   `
 * Navigate to `out\artifacts\SortingGl_jar` and run `launch.bat`.  
   Optionally, open up the terminal and run `java -jar SortingGl.jar`
 
-![Command Line Interface](graphics/cli_light_sorting.png)
+&[Command Line Interface](graphics/cli_light_sorting.png)
 
-## Commands
+* Commands
 
 * `algo [key]` : set sorting algorithm
 * `size [+/-/count]` : increase / decrease / set data size
@@ -63,9 +60,9 @@
 * `stop` : stop sorting
 * `exit/quit` : quit
 
-![Selection Sort](graphics/bubble_dark.png)
+&[Selection Sort](graphics/bubble_dark.png)
 
-## UI Controls
+* UI Controls
 
 * `Algo-Key` : Set the sorting algorithm
 * `Space`: Play/Pause
@@ -75,7 +72,7 @@
 * `Ctrl +/-` : Increase / decrease data size
 * `Ctrl-T` : Toggle light / dark theme
 
-![Selection Sort](graphics/selection_light.png)
+&[Selection Sort](graphics/selection_light.png)
 
 
 
