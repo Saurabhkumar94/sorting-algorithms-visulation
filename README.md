@@ -5,7 +5,7 @@ Excellent — you’re aiming for a Master+ / Research-level Sorting Visualizer 
 
 Below is your ultra-advanced, filtered, production-level prompt, designed for maximum technical depth, interactivity, and modularity 👇
 
-🧠 🚀 Ultra-Advanced Prompt: “Intelligent Sorting Algorithms Visualizer (Java Swing + AWT)”
+ # Ultra-Advanced Prompt: “Intelligent Sorting Algorithms Visualizer (Java Swing + AWT)”
 
 Create a highly advanced Sorting Algorithm Visualizer in Java using Swing + AWT (or optional JavaFX/Processing for smooth animation).
 
@@ -13,14 +13,14 @@ The goal is to build a modular, responsive, and intelligent visualization platfo
 
 ⚙️ 1. Core Algorithms [Keyboard Key → Algorithm]
 Key	Algorithm	Description
-B	Bubble Sort	Simple comparison-based swap sort
+B	Bubble Sort: Simple comparison-based swap sort
 I	Insertion Sort	Incremental element placement
 S	Selection Sort	Repeated minimum extraction
 M	Merge Sort	Divide-and-conquer sorting
 Q	Quick Sort	Partition-based sorting
 H	Heap Sort	Binary heap sorting
 
-🧩 All algorithms should be derived from an abstract SortingAlgorithm class with hooks for visualization updates.
+# All algorithms should be derived from an abstract SortingAlgorithm class with hooks for visualization updates.
 
 🎛 2. GUI Requirements
 
@@ -60,11 +60,11 @@ Status Panel:
 
 Algorithm name
 
-Comparisons, swaps, recursion depth
+Comparisons, swaps, and recursion depth
 
 Execution time (ms)
 
-⌨️ 3. Keyboard Shortcuts (Pro UX Layer)
+# 3. Keyboard Shortcuts (Pro UX Layer)
 
 B	🫧 Bubble Sort
 I	🔑 Insertion Sort
@@ -73,9 +73,9 @@ M	⚙️ Merge Sort
 Q	⚡ Quick Sort
 H	🏗 Heap Sort
 Ctrl + P	📊 Show performance chart
-Ctrl + H	❔ Show help / shortcut overlay
+Ctrl + H	❔ Show help/shortcut overlay
 Esc	⏹ Emergency stop current sorting
-💡 4. Advanced Technical Features
+# 4. Advanced Technical Features
 
 ✅ Multi-threading & Thread-safe rendering
 
@@ -121,7 +121,7 @@ Store user preferences in a config.json file
 
 ✅ Statistics Overlay (Floating HUD)
 
-Display:
+# Display:
 
 Algorithm Name
 
@@ -135,7 +135,7 @@ Current speed
 
 Semi-transparent overlay using AlphaComposite.
 
-🧩 5. Architecture Expectations
+# 5. Architecture Expectations
 
 Use OOP + Design Patterns:
 
@@ -149,7 +149,7 @@ Singleton → Theme manager / Settings
 
 MVC → Separation of logic, data, and rendering
 
-🧠 6. Code Quality Standards
+# 6. Code Quality Standards
 
 Full Javadoc comments
 
@@ -165,7 +165,7 @@ Modular, reusable methods
 
 Documented with UML or Class Diagram
 
-🌟 7. Optional Next-Level Features
+# 7. Optional Next-Level Features
 
 🧬 AI Mode: Automatically choose the most efficient algorithm based on data pattern detection.
 
@@ -179,8 +179,89 @@ Documented with UML or Class Diagram
 
 🌐 Web Export: Generate a GIF or video of sorting visualization.
 
-✅ Goal
+# PROJECT ARCHITECTURE OVERVIEW
 
-Build a high-performance, visually dynamic, and extensible Java Sorting Visualizer demonstrating deep understanding of algorithm design, concurrency, and interactive UI engineering.
+The project follows MVC (Model–View–Controller) style separation —
+where the frontend (View + Controller) handles the GUI, and the backend (Model) handles sorting logic & data.
 
-Would you like me to now generate the complete Java project skeleton for this ultra-advanced version — including packages (core/, algorithms/, gui/, input/, theme/) and base classes (ready to import in IntelliJ)?
+# FRONTEND (GUI / User Interaction Layer)
+
+* Purpose:
+Everything that the user sees, clicks, or interacts with — including buttons, sliders, animations, and the main display area.
+
+📁 Files & Packages:
+
+# File / Class	Description
+Main.java	Launches the GUI; sets up the main window (JFrame).
+VisualizerPanel.java	handles all graphics rendering — draws bars, highlights comparisons/swaps, and smooth animation.
+ControlPanel.java	contains UI controls (buttons, dropdowns, sliders) and listens for user actions.
+ThemeManager.java	Controls light/dark color schemes for UI.
+InfoPanel.java (optional)	Displays algorithm name, time complexity, swaps/comparisons.
+KeyboardManager.java	Handles keyboard shortcuts (space, Ctrl+R, etc.)
+OverlayPanel.java (optional)	Displays overlays like pause messages or performance charts.
+
+ # 🖼️ Frontend Technologies:
+
+Java Swing + AWT
+
+Custom rendering with Graphics / Graphics2D
+
+Event Handling via ActionListener, KeyListener
+
+Thread-safe UI updates with SwingUtilities.invokeLater()
+
+Smooth animation using double buffering & Threads
+
+# 🧠 BACKEND (Logic / Data Processing Layer)
+
+# Purpose:
+Implements all the sorting logic, algorithm behaviors, and data updates that drive the animation.
+
+📁 Files & Packages:
+
+File / Class	Description
+SortingAlgorithm.java	Abstract base class or interface — defines methods like sort(int[] array) and visualizeStep().
+BubbleSort.java: Implements Bubble Sort logic.
+InsertionSort.java: Implements Insertion Sort logic.
+SelectionSort.java	implements Selection Sort logic.
+MergeSort.java	Implements Merge Sort logic.
+QuickSort.java	implements Quick Sort logic.
+HeapSort.java	implements Heap Sort logic.
+ArrayGenerator.java	Creates random / reverse / nearly-sorted arrays.
+MetricsTracker.java	Tracks swaps, comparisons, and elapsed time.
+SortManager.java	Controls which algorithm runs, manages threads, and coordinates GUI updates.
+
+# 🧮 Backend Technologies:
+
+Java multithreading (Thread, SwingWorker)
+
+OOP abstraction & inheritance
+
+Data metrics collection (comparisons, swaps)
+
+Timing with System.nanoTime() or System.currentTimeMillis()
+
+Algorithm switching via Strategy Pattern
+
+# 🔗 FRONTEND ↔ BACKEND CONNECTION
+
+User selects algorithm & speed in ControlPanel.
+
+SortManager instantiates the corresponding SortingAlgorithm (e.g., new QuickSort()).
+
+Sorting runs in a background thread.
+
+Each swap/comparison triggers a call to VisualizerPanel.repaint().
+
+VisualizerPanel redraws updated bars smoothly.
+
+InfoPanel updates stats in real-time.
+
+# Summary Table
+Layer	Module	Package	Type	Role
+Frontend	UI + Animation	gui	View	draws bars, manages user input
+Frontend	Control Logic	core	Controller	Coordinates backend & frontend
+Backend	Sorting Logic	algorithms	Model	executes sorting algorithms
+Backend	Utilities, utils, Support	Metrics, array generation
+Theme	Appearance	theme	View Helper	Manages color schemes
+Input	Keyboard/Mouse	input	Controller Helper	Handles hotkeys & events
