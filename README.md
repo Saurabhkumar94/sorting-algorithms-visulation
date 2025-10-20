@@ -64,7 +64,7 @@ Comparisons, swaps, and recursion depth
 
 Execution time (ms)
 
-# 3. Keyboard Shortcuts (Pro UX Layer)
+# 3. Keyboard Shortcuts (UX Layer)
 
 B	🫧 Bubble Sort
 I	🔑 Insertion Sort
