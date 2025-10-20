@@ -75,7 +75,7 @@ H	🏗 Heap Sort
 Ctrl + P	📊 Show performance chart
 Ctrl + H	❔ Show help/shortcut overlay
 Esc	⏹ Emergency stop current sorting
-# 4. Advanced Technical Features
+# 4. Technical Features
 
 ✅ Multi-threading & Thread-safe rendering
 
