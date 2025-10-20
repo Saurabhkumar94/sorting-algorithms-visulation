@@ -1,4 +1,4 @@
- # “Sorting Algorithms Visualizer (Java Swing + AWT)”
+ # “Sorting Algorithms Visualization (Java Swing + AWT)”
 
 Create a Sorting Algorithm Visualizer in Java using Swing + AWT (or optional JavaFX/Processing for smooth animation).
 
