@@ -1,23 +1,23 @@
-# Sorting Visualizer - Ready Project
+ # “Sorting Algorithms Visualizer (Java Swing + AWT)”
 
-Run run.bat to compile and start the app on Windows.
-Excellent — you’re aiming for a Master+ / Research-level Sorting Visualizer Prompt — the kind that could impress professors, recruiters, or even be turned into a publishable portfolio project.
+Create a Sorting Algorithm Visualizer in Java using Swing + AWT (or optional JavaFX/Processing for smooth animation).
 
-Below is your ultra-advanced, filtered, production-level prompt, designed for maximum technical depth, interactivity, and modularity 👇
+The goal is to build a modular, responsive, and  visualization platform demonstrating how sorting algorithms operate, analyze, and optimize data sequences in real time.
 
- # Ultra-Advanced Prompt: “Intelligent Sorting Algorithms Visualizer (Java Swing + AWT)”
+# ⚙️ 1. Core Algorithms [Keyboard Key → Algorithm]
 
-Create a highly advanced Sorting Algorithm Visualizer in Java using Swing + AWT (or optional JavaFX/Processing for smooth animation).
-
-The goal is to build a modular, responsive, and intelligent visualization platform demonstrating how sorting algorithms operate, analyze, and optimize data sequences in real time.
-
-⚙️ 1. Core Algorithms [Keyboard Key → Algorithm]
 Key	Algorithm	Description
+
 B	Bubble Sort: Simple comparison-based swap sort
+
 I	Insertion Sort	Incremental element placement
+
 S	Selection Sort	Repeated minimum extraction
+
 M	Merge Sort	Divide-and-conquer sorting
+
 Q	Quick Sort	Partition-based sorting
+
 H	Heap Sort	Binary heap sorting
 
 # All algorithms should be derived from an abstract SortingAlgorithm class with hooks for visualization updates.
@@ -149,7 +149,7 @@ Singleton → Theme manager / Settings
 
 MVC → Separation of logic, data, and rendering
 
-# 6. Code Quality Standards
+# 6. Code Quality 
 
 Full Javadoc comments
 
@@ -165,7 +165,7 @@ Modular, reusable methods
 
 Documented with UML or Class Diagram
 
-# 7. Optional Next-Level Features
+# 7. Optional  Features
 
 🧬 AI Mode: Automatically choose the most efficient algorithm based on data pattern detection.
 
@@ -193,11 +193,17 @@ Everything that the user sees, clicks, or interacts with — including buttons, 
 
 # File / Class	Description
 Main.java	Launches the GUI; sets up the main window (JFrame).
+
 VisualizerPanel.java	handles all graphics rendering — draws bars, highlights comparisons/swaps, and smooth animation.
+
 ControlPanel.java	contains UI controls (buttons, dropdowns, sliders) and listens for user actions.
+
 ThemeManager.java	Controls light/dark color schemes for UI.
+
 InfoPanel.java (optional)	Displays algorithm name, time complexity, swaps/comparisons.
+
 KeyboardManager.java	Handles keyboard shortcuts (space, Ctrl+R, etc.)
+
 OverlayPanel.java (optional)	Displays overlays like pause messages or performance charts.
 
  # 🖼️ Frontend Technologies:
